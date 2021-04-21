@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+       <meta http-equiv="x-ua-compatible" content="ie=edge">
+       <title>E-commerce website</title>
+       <!-- Font Awesome -->
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+       <!-- Material Design Bootstrap -->
+       <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.css" rel="stylesheet">
+       <!--  custom styles (optional) -->
+       <link rel="stylesheet" href="assets/css/style.min.css">
+       <!-- swiper css  -->
+       <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+   </head>
+   <body>
+
+       <!-- Start  project here-->
+      
+    <!--Main Navigation-->
+    <header>
+      <div class="topheader container-fluid">
+          <div class="row">
+            <div class="col-md-8 mb-4 mb-md-0">
+              <p class="order">FREE SHIPPING FOR ALL ORDERS OF $150</p>
+            </div>
+          
+            <div class="col-md-4 mb-4 mb-md-0 ">
+                <div class="social d-flex flex-row mx-3">
+                    <div class="fb mx-2"><i class="fab fa-facebook-f"></i></div>
+                    <div class="twitter mx-2"><i class="fab fa-twitter"></i> </div>
+                    <div class="instragram mx-2"><i class="fab fa-instagram"></i></div>
+                </div>
+                <div class="lang">
+                  
+                </div>
+            
+            </div>
+          
+          </div>
+      </div>
+      <div class="logo-section ">
+          <div class="row  container-fluid">
+              <div class="col-lg-3 col-md-3 mb-4 mb-lg-0">
+              <a class="logo" href="index.html"><h3>SiteLoGO</h3></a> 
+              </div>
+            
+              <div class="col-lg-5 mb-4 mb-lg-0 d-flex flex-row text-center">
+                <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to search...">
+                    <datalist id="datalistOptions">
+                    <option value="San Francisco">
+                    <option value="New York">
+                    <option value="Seattle">
+                    <option value="Los Angeles">
+                    <option value="Chicago">
+                    </datalist>
+                <div class="category" style="width: 50%;">
+                    <select class="form-select" aria-label="Default select example">
+                      <option selected> select category</option>
+                      <option value="1">San Francisco</option>
+                      <option value="2">New York</option>
+                      <option value="3">Seattle</option>
+                    </select>   
+                </div>
+                <button type="submit" class="search"><i class="fas fa-search"></i></button>
+              </div>
+                    
+              <div class="col-lg-4 mb-4 mb-lg-0">
+                <div class="hotline1 number">
+                  <div class="txt1 fw-bold">Hotline</div>
+                  <div class="txt2">(800) 123 456 789</div>
+                </div>
+                  <div class="shop-cart d-flex align-items-center">
+                    <a class="nav-link dropdown-toggle hidden-arrow" href="#" id="navbarDropdownMenuLink" role="button" data-mdb-toggle="dropdown" aria-expanded="false"> <i class="far fa-heart"></i> <span class="badge rounded-pill badge-notification bg-danger">0</span></a>
+                    <a class="nav-link dropdown-toggle hidden-arrow" href="#" id="navbarDropdownMenuLink" role="button" data-mdb-toggle="dropdown" aria-expanded="false"> <i class="fas fa-shopping-bag"></i> <span class="badge rounded-pill badge-notification bg-danger">0</span></a>
+                    <div class="price">
+                      <p> $300.00</p>
+                    </div>
+                  </div>
+                  
+              </div>
+            
+            </div>
+      </div>
+      <div class="nav main-menu py-3 text-white ">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mb-4 mb-lg-0 text-white">
+              <nav class="navbar navbar-expand-lg navbar-light ">
+                <div class="container-fluid">
+                  <button class="navbar-toggler"  type="button"data-mdb-toggle="collapse" data-mdb-target="#navbarNav" aria-controls="navbarNav"aria-expanded="false"aria-label="Toggle navigation" > <i class="fas fa-bars"></i></button>
+
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="product-list.html">Shop</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">checkout</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+            </div>
+            <div class="col-lg-4 mb-4 mb-lg-0">
+              <div class="user-accout">
+                            <!-- Button trigger modal -->
+                      <span
+                      type=""
+                      class=""
+                      style="cursor: pointer;"
+                      data-mdb-toggle="modal"
+                      data-mdb-target="#exampleModal"
+                      >
+                        <i class="fas fa-user"></i>  Login/Register
+                      </span>
+
+                      <!-- Modal -->
+                      <div
+                      class="modal fade"
+                      id="exampleModal"
+                      tabindex="-1"
+                      aria-labelledby="exampleModalLabel"
+                      aria-hidden="true"
+                      >
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title text-black" id="exampleModalLabel">User Login and Register </h5>
+                            <button
+                              type="button"
+                              class="btn-close"
+                              data-mdb-dismiss="modal"
+                              aria-label="Close"
+                            ></button>
+                          </div>
+                          <div class="modal-body">
+                        <!-- Pills navs -->
+                            <ul class="nav nav-pills nav-justified mb-3" id="ex1" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                <a
+                                    class="nav-link active"
+                                    id="tab-login"
+                                    data-mdb-toggle="pill"
+                                    href="#pills-login"
+                                    role="tab"
+                                    aria-controls="pills-login"
+                                    aria-selected="true"
+                                    >Login</a
+                                >
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                <a
+                                    class="nav-link"
+                                    id="tab-register"
+                                    data-mdb-toggle="pill"
+                                    href="#pills-register"
+                                    role="tab"
+                                    aria-controls="pills-register"
+                                    aria-selected="false"
+                                    >Register</a
+                                >
+                                </li>
+                            </ul>
+                            <!-- Pills navs -->
+                            
+                            <!-- Pills content -->
+                            <div class="tab-content">
+                                <div
+                                class="tab-pane fade show active"
+                                id="pills-login"
+                                role="tabpanel"
+                                aria-labelledby="tab-login"
+                                >
+                                <form>
+                                    <div class="text-center mb-3">
+                                    <p>Sign in with:</p>
+                                    <button type="button" class="btn btn-primary btn-floating mx-1">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </button>
+                            
+                                    <button type="button" class="btn btn-primary btn-floating mx-1">
+                                        <i class="fab fa-google"></i>
+                                    </button>
+                            
+                                    <button type="button" class="btn btn-primary btn-floating mx-1">
+                                        <i class="fab fa-twitter"></i>
+                                    </button>
+                            
+                                    <button type="button" class="btn btn-primary btn-floating mx-1">
+                                        <i class="fab fa-github"></i>
+                                    </button>
+                                    </div>
+                            
+                                    <p class="text-center text-muted">or:</p>
+                            
+                                    <!-- Email input -->
+                                    <div class="form-outline mb-4">
+                                    <input type="email" id="loginName" class="form-control" />
+                                    <label class="form-label" for="loginName">Email or username</label>
+                                    </div>
+                            
+                                    <!-- Password input -->
+                                    <div class="form-outline mb-4">
+                                    <input type="password" id="loginPassword" class="form-control" />
+                                    <label class="form-label" for="loginPassword">Password</label>
+                                    </div>
+                            
+                                    <!-- 2 column grid layout -->
+                                    <div class="row mb-4">
+                                    <div class="col-md-6 d-flex justify-content-center">
+                                        <!-- Checkbox -->
+                                        <div class="form-check mb-3 mb-md-0">
+                                        <input
+                                            class="form-check-input"
+                                            type="checkbox"
+                                            value=""
+                                            id="loginCheck"
+                                            checked
+                                        />
+                                        <label class="form-check-label text-muted" for="loginCheck"> Remember me </label>
+                                        </div>
+                                    </div>
+                            
+                                    <div class="col-md-6 d-flex justify-content-center">
+                                        <!-- Simple link -->
+                                        <a href="#!" class="text-muted">Forgot password?</a>
+                                    </div>
+                                    </div>
+                            
+                                    <!-- Submit button -->
+                                    <button type="submit" class="btn btn-primary btn-block mb-4">Sign in</button>
+                            
+                                    <!-- Register buttons -->
+                                    <div class="text-center text-muted">
+                                    <p>Not a member? <li class="nav-item" role="presentation">
+                                        <a
+                                            class="nav-link"
+                                            id="tab-register"
+                                            data-mdb-toggle="pill"
+                                            href="#pills-register"
+                                            role="tab"
+                                            aria-controls="pills-register"
+                                            aria-selected="false"
+                                            >Register</a
+                                        >
+                                        </li></p>
+                                    </div>
+                                </form>
+                                </div>
+                                <div
+                                class="tab-pane fade"
+                                id="pills-register"
+                                role="tabpanel"
+                                aria-labelledby="tab-register"
+                                >
+                                <form>
+                                    <div class="text-center mb-3">
+                                    <p>Sign up with:</p>
+                                    <button type="button" class="btn btn-primary btn-floating mx-1">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </button>
+                            
+                                    <button type="button" class="btn btn-primary btn-floating mx-1">
+                                        <i class="fab fa-google"></i>
+                                    </button>
+                            
+                                    <button type="button" class="btn btn-primary btn-floating mx-1">
+                                        <i class="fab fa-twitter"></i>
+                                    </button>
+                            
+                                    <button type="button" class="btn btn-primary btn-floating mx-1">
+                                        <i class="fab fa-github"></i>
+                                    </button>
+                                    </div>
+                            
+                                    <p class="text-center text-muted">or:</p>
+                            
+                                    <!-- Name input -->
+                                    <div class="form-outline mb-4">
+                                    <input type="text" id="registerName" class="form-control" />
+                                    <label class="form-label" for="registerName">Name</label>
+                                    </div>
+                            
+                                    <!-- Username input -->
+                                    <div class="form-outline mb-4">
+                                    <input type="text" id="registerUsername" class="form-control" />
+                                    <label class="form-label" for="registerUsername">Username</label>
+                                    </div>
+                            
+                                    <!-- Email input -->
+                                    <div class="form-outline mb-4">
+                                    <input type="email" id="registerEmail" class="form-control" />
+                                    <label class="form-label" for="registerEmail">Email</label>
+                                    </div>
+                            
+                                    <!-- Password input -->
+                                    <div class="form-outline mb-4">
+                                    <input type="password" id="registerPassword" class="form-control" />
+                                    <label class="form-label" for="registerPassword">Password</label>
+                                    </div>
+                            
+                                    <!-- Repeat Password input -->
+                                    <div class="form-outline mb-4">
+                                    <input type="password" id="registerRepeatPassword" class="form-control" />
+                                    <label class="form-label" for="registerRepeatPassword">Repeat password</label>
+                                    </div>
+                            
+                                    <!-- Checkbox -->
+                                    <div class="form-check d-flex justify-content-center mb-4">
+                                    <input
+                                        class="form-check-input me-2"
+                                        type="checkbox"
+                                        value=""
+                                        id="registerCheck"
+                                        checked
+                                        aria-describedby="registerCheckHelpText"
+                                    />
+                                    <label class="form-check-label text-muted" for="registerCheck">
+                                        I have read and agree to the terms
+                                    </label>
+                                    </div>
+                            
+                                    <!-- Submit button -->
+                                    <button type="submit" class="btn btn-primary btn-block mb-3">Sign in</button>
+                                </form>
+                                </div>
+                            </div>
+                            <!-- Pills content -->
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">
+                              Close
+                            </button>
+                            <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                          </div>
+                        </div>
+                      </div>
+                      </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </header>
+    <!--Main Navigation-->
+
+    <!--Main layout-->
+    <main>
+        <div class="container">
+            <!-- product display  -->
+            <div class="row py-5">
+            
+              <div class="col-md-6 mb-4 mb-md-0">
+                <div class = "product-imgs">
+                    <div class = "img-display">
+                      <div class = "img-showcase">
+                        <img src = "assets/img/products/p12.jpg" alt = "shoe image">
+                        <img src = "assets/img/products/p13.jpg" alt = "shoe image">
+                        <img src = "assets/img/products/p14.jpg" alt = "shoe image">
+                        <img src = "assets/img/products/p15.jpg" alt = "shoe image">
+                      </div>
+                    </div>
+                    <div class = "img-select">
+                      <div class = "img-item">
+                        <a href = "#" data-id = "1">
+                          <img src = "assets/img/products/p12.jpg" alt = "shoe image">
+                        </a>
+                      </div>
+                      <div class = "img-item">
+                        <a href = "#" data-id = "2">
+                          <img src = "assets/img/products/p13.jpg" alt = "shoe image">
+                        </a>
+                      </div>
+                      <div class = "img-item">
+                        <a href = "#" data-id = "3">
+                          <img src = "assets/img/products/p14.jpg" alt = "shoe image">
+                        </a>
+                      </div>
+                      <div class = "img-item">
+                        <a href = "#" data-id = "4">
+                          <img src = "assets/img/products/p15.jpg" alt = "shoe image">
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            
+              <div class="col-md-6 mb-4 mb-md-0">
+                <div class = "product-content">
+                    <h2 class = "product-title">nike shoes</h2>
+                    <a href = "#" class = "product-link">visit nike store</a>
+                    <div class = "product-rating">
+                      <i class = "fas fa-star"></i>
+                      <i class = "fas fa-star"></i>
+                      <i class = "fas fa-star"></i>
+                      <i class = "fas fa-star"></i>
+                      <i class = "fas fa-star-half-alt"></i>
+                      <span>4.7(21)</span>
+                    </div>
+            
+                    <div class = "product-price">
+                      <p class = "last-price">Old Price: <span>$257.00</span></p>
+                      <p class = "new-price">New Price: <span>$249.00 (5%)</span></p>
+                    </div>
+            
+                    <div class = "product-detail">
+                      <h2>about this item: </h2>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo eveniet veniam tempora fuga tenetur placeat sapiente architecto illum soluta consequuntur, aspernatur quidem at sequi ipsa!</p>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, perferendis eius. Dignissimos, labore suscipit. Unde.</p>
+                      <ul>
+                        <li>Color: <span>Black</span></li>
+                        <li>Available: <span>in stock</span></li>
+                        <li>Category: <span>Shoes</span></li>
+                        <li>Shipping Area: <span>All over the world</span></li>
+                        <li>Shipping Fee: <span>Free</span></li>
+                      </ul>
+                    </div>
+            
+                    <div class = "purchase-info">
+                      <input type = "number" min = "0" value = "1">
+                      <button type = "button" class = "btn">
+                        Add to Cart <i class = "fas fa-shopping-cart"></i>
+                      </button>
+                      <button type = "button" class = "btn">Compare</button>
+                    </div>
+            
+                    <div class = "social-links">
+                      <p>Share At: </p>
+                      <a href = "#">
+                        <i class = "fab fa-facebook-f"></i>
+                      </a>
+                      <a href = "#">
+                        <i class = "fab fa-twitter"></i>
+                      </a>
+                      <a href = "#">
+                        <i class = "fab fa-instagram"></i>
+                      </a>
+                      <a href = "#">
+                        <i class = "fab fa-whatsapp"></i>
+                      </a>
+                      <a href = "#">
+                        <i class = "fab fa-pinterest"></i>
+                      </a>
+                    </div>
+                  </div>
+              </div>
+            
+            </div>
+              <!-- product discrption  -->
+              <!-- Tabs navs -->
+            <ul class="nav nav-tabs mb-3" id="ex1" role="tablist">
+                <li class="nav-item" role="presentation">
+                <a
+                    class="nav-link active"
+                    id="ex1-tab-1"
+                    data-mdb-toggle="tab"
+                    href="#ex1-tabs-1"
+                    role="tab"
+                    aria-controls="ex1-tabs-1"
+                    aria-selected="true"
+                    >Description</a
+                >
+                </li>
+                <li class="nav-item" role="presentation">
+                <a
+                    class="nav-link"
+                    id="ex1-tab-2"
+                    data-mdb-toggle="tab"
+                    href="#ex1-tabs-2"
+                    role="tab"
+                    aria-controls="ex1-tabs-2"
+                    aria-selected="false"
+                    >Delivery</a
+                >
+                </li>
+                <li class="nav-item" role="presentation">
+                <a
+                    class="nav-link"
+                    id="ex1-tab-3"
+                    data-mdb-toggle="tab"
+                    href="#ex1-tabs-3"
+                    role="tab"
+                    aria-controls="ex1-tabs-3"
+                    aria-selected="false"
+                    >Product reviews</a
+                >
+                </li>
+            </ul>
+            <!-- Tabs navs -->
+            
+            <!-- Tabs content -->
+          <div class="tab-content" id="ex1-content">
+                <div
+                class="tab-pane fade show active"
+                id="ex1-tabs-1"
+                role="tabpanel"
+                aria-labelledby="ex1-tab-1"
+                >
+                  <p>
+
+                    We provide a full-line product offering in a traditional sporting goods store format. Our product mix includes athletic shoes, apparel, and accessories, as well as a broad selection of outdoor and athletic equipment for team sports, fitness, camping, hunting, tennis, golf, winter and summer recreation, and roller sports. We’re very pleased to introduce you to our training gear store that was created to treat your sports passions! That’s too important to keep a good shape in this busy life. Sport can be a good way to relax your mind, to unwind your mental health with a top-notch training process.
+                    
+                    
+                    In this case, clothing really matters! We use only perfect fabric that allows your body to breath while you’re running, lifting weights or squatting. Super hot summer or frosty winter won’t be an obstacle with our cooling or heating underwear, tops, and bottoms. Who said that sports clothing can’t be gorgeous? Enjoy our huge clothing collection for every taste that will bring you self-confidence and great comfort. Cool hoodies, sweatshirts, graphic t-shirts, shorts, leggings, and more! We have everything to help all your family keep fit!.
+                    </p>
+                </div>
+                <div class="tab-pane fade" id="ex1-tabs-2" role="tabpanel" aria-labelledby="ex1-tab-2">
+                    
+              1. How much is shipping?
+
+              2. Once you’ve clicked through to Secure Checkout, you can enter your delivery address and choose a shipping method. Shipping costs are then calculated and tacked on to your subtotal at the bottom of the page.
+               Can I track my order? <br> <br> <br>
+
+              3. We rely on a global network of shipping partners (UPS, FedEx, DHL) as well as local postal services (USPS) to get your order to your doorstep as soon as possible. For this reason, tracking is not always available. If your order is being sent by a trackable service, these details will be included on your orders page as well as on the shipping email we send you.
+              Where does my order ship from? <br> <br> <br>
+
+                4.We rely on a global network of shipping partners (UPS, FedEx, DHL) as well as local postal services (USPS) to get your order to your doorstep as soon as possible. For this reason, tracking is not always available. If your order is being sent by a trackable service, these details will be included on your orders page as well as on the shipping email we send you.
+
+                </div>
+                <div class="tab-pane fade" id="ex1-tabs-3" role="tabpanel" aria-labelledby="ex1-tab-3">
+                   <div class="product-review">
+                     <div class="title  text-black">
+                        <h2 class="fw-bold">Customer Reviews</h2>
+                        <p class="text-muted">No reviews yet</p>
+                        <a href="#collapseExample"aria-expanded="false" aria-controls="collapseExample" data-mdb-toggle="collapse" class="float-end text-decoration-underline">Write a review</a>
+                     </div>
+                         <hr class="my-5">
+                     <div class="review-form">
+                               <!-- Collapsed content -->
+                        <div class="collapse mt-3" id="collapseExample">
+                              <h2 class="text-black fw-bold">Write a Review</h2>
+                              <section class="border pt-2 mb-4">
+                                <ul class="rating" data-mdb-toggle="rating" tabindex="0" style="outline: currentcolor none medium;">
+                                  <li>
+                                    <i class="fa-star fa-sm text-primary fas active" title="" data-mdb-toggle="tooltip" data-mdb-original-title="Bad" aria-label="Bad"></i>
+                                  </li>
+                                  <li>
+                                    <i class="fa-star fa-sm text-primary fas active" title="" data-mdb-toggle="tooltip" data-mdb-original-title="Poor" aria-label="Poor"></i>
+                                  </li>
+                                  <li>
+                                    <i class="fa-star fa-sm text-primary fas active" title="" data-mdb-toggle="tooltip" data-mdb-original-title="OK" aria-label="OK"></i>
+                                  </li>
+                                  <li>
+                                    <i class="fa-star fa-sm text-primary far" title="" data-mdb-toggle="tooltip" data-mdb-original-title="Good" aria-label="Good"></i>
+                                  </li>
+                                  <li>
+                                    <i class="fa-star fa-sm text-primary far" title="" data-mdb-toggle="tooltip" data-mdb-original-title="Excellent" aria-label="Excellent"></i>
+                                  </li>
+                                </ul>
+                              </section>
+                              <div class="mb-3 py-2">
+                                <div class="form-outline">
+                                  <input type="text" id="form1" class="form-control" />
+                                  <label class="form-label" for="form1">Please enter your name</label>
+                                </div>
+                              <div class="mb-3 py-3">
+                                <div class="form-outline">
+                                  <input type="email" id="form1" class="form-control" />
+                                  <label class="form-label" for="form1">Please enter email address!</label>
+                                </div>
+                                <div class="mb-3 py-3">
+                                  <div class="form-outline">
+                                    <textarea class="form-control" id="textAreaExample" rows="4"></textarea>
+                                    <label class="form-label" for="textAreaExample">write your review</label>
+                                  </div>
+                                </div>
+                                <button type="button" class="btn btn-primary float-end">Submit Review</button>
+                        </div>
+                     </div>
+                   </div>
+                </div>
+            </div>
+            <!-- Tabs content -->
+        </div>
+
+
+
+        <!-- Related product  -->
+
+        <section class="container featured-product py-5">
+          <div class="row">
+            <div class="col-md-12 mb-4 mb-md-0">
+                    <h2 class="heading text-center fw-bold">Related product</h2> 
+            </div>
+            <div class="row py-5">
+              <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                <div class="product">
+                  <div class="product-img">
+                     <img class="w-45" src="assets/img/products/p9.jpg" alt="">
+                  </div>
+                  <div class="protuct-title text-center">
+                     <h5>corn </h5>
+                  </div>
+                  <div class="product-review text-center ">
+                      <div class="product-star">
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                      </div>
+                      <div class="review-txt text-center mx-5">
+                        <span> 22 Reviews</span>
+                     </div>
+                  </div> 
+                  <div class="product-price d-flex justify-content-arround mx-5 ">
+                     <div class="reguler"> <del>$200</del></div>
+                     <div class="discount mx-5">$100</div>
+                  </div>
+                  <div class="overlay-cart text-center">
+                      <div class="cart-icon">
+                         <a href="single-product.html" role="button" class="btn btn-primary btn-floating">
+                           <i class="fas fa-shopping-cart"></i>
+                         </a>
+                         <a href="" role="button" class="btn btn-primary btn-floating">
+                           <i class="fas fa-expand"></i>
+                         </a>
+                      </div>
+
+                      <div class="btn-text">
+                        <a href="single-product.html" class="btn btn-default btn-lg">Add to cart</a>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            
+              <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                <div class="product">
+                  <div class="product-img">
+                     <img class="w-45" src="assets/img/products/p19.jpg" alt="">
+                  </div>
+                  <div class="protuct-title text-center">
+                     <h5>Karela</h5>
+                  </div>
+                  <div class="product-review text-center ">
+                      <div class="product-star">
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                      </div>
+                      <div class="review-txt text-center mx-5">
+                        <span> 22 Reviews</span>
+                     </div>
+                  </div> 
+                  <div class="product-price d-flex justify-content-arround mx-5 ">
+                     <div class="reguler"> <del>$200</del></div>
+                     <div class="discount mx-5">$100</div>
+                  </div>
+                  <div class="overlay-cart text-center">
+                      <div class="cart-icon">
+                         <a href="" role="button" class="btn btn-primary btn-floating">
+                           <i class="fas fa-shopping-cart"></i>
+                         </a>
+                         <a href="" role="button" class="btn btn-primary btn-floating">
+                           <i class="fas fa-expand"></i>
+                         </a>
+                      </div>
+
+                      <div class="btn-text">
+                        <a href="" class="btn btn-default btn-lg">Add to cart</a>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            
+              <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                <div class="product">
+                  <div class="product-img">
+                     <img class="w-45" src="assets/img/products/p23.jpg" alt="">
+                  </div>
+                  <div class="protuct-title text-center">
+                     <h5>cauliflower</h5>
+                  </div>
+                  <div class="product-review text-center ">
+                      <div class="product-star">
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                      </div>
+                      <div class="review-txt text-center mx-5">
+                        <span> 22 Reviews</span>
+                     </div>
+                  </div> 
+                  <div class="product-price d-flex justify-content-arround mx-5 ">
+                     <div class="reguler"> <del>$200</del></div>
+                     <div class="discount mx-5">$100</div>
+                  </div>
+                  <div class="overlay-cart text-center">
+                      <div class="cart-icon">
+                         <a href="" role="button" class="btn btn-primary btn-floating">
+                           <i class="fas fa-shopping-cart"></i>
+                         </a>
+                         <a href="" role="button" class="btn btn-primary btn-floating">
+                           <i class="fas fa-expand"></i>
+                         </a>
+                      </div>
+
+                      <div class="btn-text">
+                        <a href="" class="btn btn-default btn-lg">Add to cart</a>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            
+              <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                <div class="product">
+                  <div class="product-img">
+                     <img class="w-45" src="assets/img/products/p4.jpg" alt="">
+                  </div>
+                  <div class="protuct-title text-center">
+                     <h5>Lemon</h5>
+                  </div>
+                  <div class="product-review text-center ">
+                      <div class="product-star">
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                      </div>
+                      <div class="review-txt text-center mx-5">
+                        <span> 22 Reviews</span>
+                     </div>
+                  </div> 
+                  <div class="product-price d-flex justify-content-arround mx-5 ">
+                     <div class="reguler"> <del>$200</del></div>
+                     <div class="discount mx-5">$100</div>
+                  </div>
+                  <div class="overlay-cart text-center">
+                      <div class="cart-icon">
+                         <a href="" role="button" class="btn btn-primary btn-floating">
+                           <i class="fas fa-shopping-cart"></i>
+                         </a>
+                         <a href="" role="button" class="btn btn-primary btn-floating">
+                           <i class="fas fa-expand"></i>
+                         </a>
+                      </div>
+
+                      <div class="btn-text">
+                        <a href="" class="btn btn-default btn-lg">Add to cart</a>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            
+            </div>
+        </div>
+        </section>
+    </main>
+    <!--Main layout-->
+    
+    <!--Footer-->
+    <footer class=" text-white py-3" >
+      <div class="footer-top container py-3 ">
+        <div class="row ">
+          <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+              <h2>SiteLogo</h2>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque nulla tempora voluptate sint deserunt vero esse provident.</p>
+              <div class="social-icon">
+                <a class="btn btn-primary btn-floating" style="background-color: #3b5998" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-primary btn-floating" style="background-color: #3b5998" href="#!" role="button"><i class="fab fa-twitter"></i></a>
+                <a class="btn btn-primary btn-floating" style="background-color: #3b5998" href="#!" role="button"><i class="fab fa-instagram"></i></a>
+                <a class="btn btn-primary btn-floating" style="background-color: #3b5998" href="#!" role="button"><i class="fab fa-dribbble"></i></a>
+              </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                <h2> Shop </h2>
+                <ul>
+                  <li>For man</li>
+                  <li>For Woman</li>
+                  <li>Stories</li>
+                  <li>Our Blog</li>
+                </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+            <h2> Company </h2>
+            <ul>
+              <li>Log In</li>
+              <li>Register</li>
+              <li>Wishlist</li>
+              <li>Our Product</li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+              <h2>NewsLetter</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro non illo saepe cupiditate dolores ad delectus soluta accusamus.</p>
+              <div class="email-opt">
+                <div class="form-outline">
+                  <input type="email" id="form1" class="form-control" style="position: relative;" />
+                  <label class="form-label" for="form1">Enter Email</label>
+                  <button type="button" class="btn " style="position: absolute; right: 0; top: 0;"><i class="fas fa-arrow-right"></i></button>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+      <hr class="my-5">
+       <div class="footer-copyright text-center py-3 text-white">
+        Copyrights © 2021 by <a href="https://fb.com/Rahim703936" class="link-info">Abdur Rahim </a> All Rights Reserved
+       </div>
+    </footer>
+      <!--Footer-->
+  
+         <!-- End  project here-->
+     </body>
+     <!-- MDB core JavaScript -->
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.js"></script>
+     <!-- custom js -->
+     <script src="assets/js/script.js"></script>
+      <!-- swiper js  -->
+     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+     <!-- jquery  -->
+     <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+  </html>
+  
+   

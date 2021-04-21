@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+       <meta http-equiv="x-ua-compatible" content="ie=edge">
+       <title>E-commere Website</title>
+       <!-- Font Awesome -->
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+       <!-- Material Design Bootstrap -->
+       <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.css" rel="stylesheet">
+       <!--  custom styles (optional) -->
+       <link rel="stylesheet" href="./assets/css/style.min.css">
+       <!-- swiper css  -->
+       <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+   </head>
+   <body>
+
+       <!-- Start  project here-->
+      
+    <!--Main Navigation-->
+    <header>
+      <div class="topheader container-fluid">
+          <div class="row">
+            <div class="col-md-8 mb-4 mb-md-0">
+              <p class="order">FREE SHIPPING FOR ALL ORDERS OF $150</p>
+            </div>
+          
+            <div class="col-md-4 mb-4 mb-md-0 ">
+                <div class="social d-flex flex-row mx-3">
+                    <div class="fb mx-2"><i class="fab fa-facebook-f"></i></div>
+                    <div class="twitter mx-2"><i class="fab fa-twitter"></i> </div>
+                    <div class="instragram mx-2"><i class="fab fa-instagram"></i></div>
+                </div>
+                <div class="lang">
+                  
+                </div>
+            
+            </div>
+          
+          </div>
+      </div>
+      <div class="logo-section ">
+          <div class="row  container-fluid">
+              <div class="col-lg-3 col-md-3 mb-4 mb-lg-0">
+              <a class="logo" href="index.html"><h3>SiteLoGO</h3></a> 
+              </div>
+            
+              <div class="col-lg-5 mb-4 mb-lg-0 d-flex flex-row text-center">
+                <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to search...">
+                    <datalist id="datalistOptions">
+                    <option value="San Francisco">
+                    <option value="New York">
+                    <option value="Seattle">
+                    <option value="Los Angeles">
+                    <option value="Chicago">
+                    </datalist>
+                <div class="category" style="width: 50%;">
+                    <select class="form-select" aria-label="Default select example">
+                      <option selected> select category</option>
+                      <option value="1">San Francisco</option>
+                      <option value="2">New York</option>
+                      <option value="3">Seattle</option>
+                    </select>   
+                </div>
+                <button type="submit" class="search"><i class="fas fa-search"></i></button>
+              </div>
+                    
+              <div class="col-lg-4 mb-4 mb-lg-0">
+                <div class="hotline1 number">
+                  <div class="txt1 fw-bold">Hotline</div>
+                  <div class="txt2">(800) 123 456 789</div>
+                </div>
+                  <div class="shop-cart d-flex align-items-center">
+                    <a class="nav-link dropdown-toggle hidden-arrow" href="#" id="navbarDropdownMenuLink" role="button" data-mdb-toggle="dropdown" aria-expanded="false"> <i class="far fa-heart"></i> <span class="badge rounded-pill badge-notification bg-danger">0</span></a>
+                    <a class="nav-link dropdown-toggle hidden-arrow" href="#" id="navbarDropdownMenuLink" role="button" data-mdb-toggle="dropdown" aria-expanded="false"> <i class="fas fa-shopping-bag"></i> <span class="badge rounded-pill badge-notification bg-danger">0</span></a>
+                    <div class="price">
+                      <p> $300.00</p>
+                    </div>
+                  </div>
+                  
+              </div>
+            
+            </div>
+      </div>
+      <div class="nav main-menu py-3 text-white ">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mb-4 mb-lg-0 text-white">
+              <nav class="navbar navbar-expand-lg navbar-light ">
+                <div class="container-fluid">
+                  <button class="navbar-toggler"  type="button"data-mdb-toggle="collapse" data-mdb-target="#navbarNav" aria-controls="navbarNav"aria-expanded="false"aria-label="Toggle navigation" > <i class="fas fa-bars"></i></button>
+
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="product-list.html">Shop</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="checkout.html" tabindex="-1" aria-disabled="true">checkout</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+            </div>
+            <div class="col-lg-4 mb-4 mb-lg-0">
+              <div class="user-accout">
+                            <!-- Button trigger modal -->
+                      <span
+                      type=""
+                      class=""
+                      style="cursor: pointer;"
+                      data-mdb-toggle="modal"
+                      data-mdb-target="#exampleModal"
+                      >
+                        <i class="fas fa-user"></i>  Login/Register
+                      </span>
+
+                      <!-- Modal -->
+                      <div
+                      class="modal fade"
+                      id="exampleModal"
+                      tabindex="-1"
+                      aria-labelledby="exampleModalLabel"
+                      aria-hidden="true"
+                      >
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title text-black" id="exampleModalLabel">User Login and Register </h5>
+                            <button
+                              type="button"
+                              class="btn-close"
+                              data-mdb-dismiss="modal"
+                              aria-label="Close"
+                            ></button>
+                          </div>
+                          <div class="modal-body">
+                        <!-- Pills navs -->
+                            <ul class="nav nav-pills nav-justified mb-3" id="ex1" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                <a
+                                    class="nav-link active"
+                                    id="tab-login"
+                                    data-mdb-toggle="pill"
+                                    href="#pills-login"
+                                    role="tab"
+                                    aria-controls="pills-login"
+                                    aria-selected="true"
+                                    >Login</a
+                                >
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                <a
+                                    class="nav-link"
+                                    id="tab-register"
+                                    data-mdb-toggle="pill"
+                                    href="#pills-register"
+                                    role="tab"
+                                    aria-controls="pills-register"
+                                    aria-selected="false"
+                                    >Register</a
+                                >
+                                </li>
+                            </ul>
+                            <!-- Pills navs -->
+                            
+                            <!-- Pills content -->
+                            <div class="tab-content">
+                                <div
+                                class="tab-pane fade show active"
+                                id="pills-login"
+                                role="tabpanel"
+                                aria-labelledby="tab-login"
+                                >
+                                <form>
+                                    <div class="text-center mb-3">
+                                    <p>Sign in with:</p>
+                                    <button type="button" class="btn btn-primary btn-floating mx-1">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </button>
+                            
+                                    <button type="button" class="btn btn-primary btn-floating mx-1">
+                                        <i class="fab fa-google"></i>
+                                    </button>
+                            
+                                    <button type="button" class="btn btn-primary btn-floating mx-1">
+                                        <i class="fab fa-twitter"></i>
+                                    </button>
+                            
+                                    <button type="button" class="btn btn-primary btn-floating mx-1">
+                                        <i class="fab fa-github"></i>
+                                    </button>
+                                    </div>
+                            
+                                    <p class="text-center text-muted">or:</p>
+                            
+                                    <!-- Email input -->
+                                    <div class="form-outline mb-4">
+                                    <input type="email" id="loginName" class="form-control" />
+                                    <label class="form-label" for="loginName">Email or username</label>
+                                    </div>
+                            
+                                    <!-- Password input -->
+                                    <div class="form-outline mb-4">
+                                    <input type="password" id="loginPassword" class="form-control" />
+                                    <label class="form-label" for="loginPassword">Password</label>
+                                    </div>
+                            
+                                    <!-- 2 column grid layout -->
+                                    <div class="row mb-4">
+                                    <div class="col-md-6 d-flex justify-content-center">
+                                        <!-- Checkbox -->
+                                        <div class="form-check mb-3 mb-md-0">
+                                        <input
+                                            class="form-check-input"
+                                            type="checkbox"
+                                            value=""
+                                            id="loginCheck"
+                                            checked
+                                        />
+                                        <label class="form-check-label text-muted" for="loginCheck"> Remember me </label>
+                                        </div>
+                                    </div>
+                            
+                                    <div class="col-md-6 d-flex justify-content-center">
+                                        <!-- Simple link -->
+                                        <a href="#!" class="text-muted">Forgot password?</a>
+                                    </div>
+                                    </div>
+                            
+                                    <!-- Submit button -->
+                                    <button type="submit" class="btn btn-primary btn-block mb-4">Sign in</button>
+                            
+                                    <!-- Register buttons -->
+                                    <div class="text-center text-muted">
+                                    <p>Not a member? <li class="nav-item" role="presentation">
+                                        <a
+                                            class="nav-link"
+                                            id="tab-register"
+                                            data-mdb-toggle="pill"
+                                            href="#pills-register"
+                                            role="tab"
+                                            aria-controls="pills-register"
+                                            aria-selected="false"
+                                            >Register</a
+                                        >
+                                        </li></p>
+                                    </div>
+                                </form>
+                                </div>
+                                <div
+                                class="tab-pane fade"
+                                id="pills-register"
+                                role="tabpanel"
+                                aria-labelledby="tab-register"
+                                >
+                                <form>
+                                    <div class="text-center mb-3">
+                                    <p>Sign up with:</p>
+                                    <button type="button" class="btn btn-primary btn-floating mx-1">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </button>
+                            
+                                    <button type="button" class="btn btn-primary btn-floating mx-1">
+                                        <i class="fab fa-google"></i>
+                                    </button>
+                            
+                                    <button type="button" class="btn btn-primary btn-floating mx-1">
+                                        <i class="fab fa-twitter"></i>
+                                    </button>
+                            
+                                    <button type="button" class="btn btn-primary btn-floating mx-1">
+                                        <i class="fab fa-github"></i>
+                                    </button>
+                                    </div>
+                            
+                                    <p class="text-center text-muted">or:</p>
+                            
+                                    <!-- Name input -->
+                                    <div class="form-outline mb-4">
+                                    <input type="text" id="registerName" class="form-control" />
+                                    <label class="form-label" for="registerName">Name</label>
+                                    </div>
+                            
+                                    <!-- Username input -->
+                                    <div class="form-outline mb-4">
+                                    <input type="text" id="registerUsername" class="form-control" />
+                                    <label class="form-label" for="registerUsername">Username</label>
+                                    </div>
+                            
+                                    <!-- Email input -->
+                                    <div class="form-outline mb-4">
+                                    <input type="email" id="registerEmail" class="form-control" />
+                                    <label class="form-label" for="registerEmail">Email</label>
+                                    </div>
+                            
+                                    <!-- Password input -->
+                                    <div class="form-outline mb-4">
+                                    <input type="password" id="registerPassword" class="form-control" />
+                                    <label class="form-label" for="registerPassword">Password</label>
+                                    </div>
+                            
+                                    <!-- Repeat Password input -->
+                                    <div class="form-outline mb-4">
+                                    <input type="password" id="registerRepeatPassword" class="form-control" />
+                                    <label class="form-label" for="registerRepeatPassword">Repeat password</label>
+                                    </div>
+                            
+                                    <!-- Checkbox -->
+                                    <div class="form-check d-flex justify-content-center mb-4">
+                                    <input
+                                        class="form-check-input me-2"
+                                        type="checkbox"
+                                        value=""
+                                        id="registerCheck"
+                                        checked
+                                        aria-describedby="registerCheckHelpText"
+                                    />
+                                    <label class="form-check-label text-muted" for="registerCheck">
+                                        I have read and agree to the terms
+                                    </label>
+                                    </div>
+                            
+                                    <!-- Submit button -->
+                                    <button type="submit" class="btn btn-primary btn-block mb-3">Sign in</button>
+                                </form>
+                                </div>
+                            </div>
+                            <!-- Pills content -->
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">
+                              Close
+                            </button>
+                            <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                          </div>
+                        </div>
+                      </div>
+                      </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </header>
+    <!--Main Navigation-->
+   
+    <!--Main layout-->
+    <main>
+
+               
+        <!--  checkout -->
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-md-8 mb-4 mb-md-0 border-end-1">
+                  <!-- breadcum  -->
+                   <div class="row">
+                     <div class="col-md-12">
+                      <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                            <li class="breadcrumb-item"><a href="#">Shop</a></li>
+                            <li class="breadcrumb-item active">Checkout</li>
+                        </ol>
+                     </nav>
+                     <h1 class="mb-5">Checkout</h1>
+                     </div>
+                   </div>
+                   <div class="row">
+                       <div class="col-md-12">
+                        <div class="alert">
+                            <div class="alert d-flex alert-info  mb-2 rounded-2" role="alert"><i class="fas fa-exclamation-circle fs-xl me-3"></i>
+                            <div>Have a coupon code? <a href="#modal-coupon" data-mdb-toggle="modal" data-mdb-target="#CouponModal" class="alert-link">Click here to enter your code</a></div>
+                            </div>
+                            <!-- Modal -->
+                            <div class="modal top fade" id="CouponModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-mdb-backdrop="true" data-mdb-keyboard="true">
+                                <div class="modal-dialog  ">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Coupon code</h5>
+                                    <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body"> <div class="form-outline">
+                                      <input type="text" id="form1" class="form-control" valid />
+                                      <label class="form-label" for="form1">Enter Coupon Code</label>
+                                    </div></div>
+                                    <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">
+                                        Close
+                                    </button>
+                                    <button type="button" class="btn btn-primary">Apply Code</button>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                       </div>
+                   </div>
+                      <div class="row">
+                          <div class="col-md-12">
+                            <h2 class="">Billing details</h2>
+                            <div class="billing-form py-3">
+                                <form>
+                                    <!-- 2 column grid layout with text inputs for the first and last names -->
+                                    <div class="row mb-4">
+                                      <div class="col">
+                                        <div class="form-outline">
+                                          <input type="text" id="form6Example1" class="form-control" />
+                                          <label class="form-label" for="form6Example1">First name</label>
+                                        </div>
+                                      </div>
+                                      <div class="col">
+                                        <div class="form-outline">
+                                          <input type="text" id="form6Example2" class="form-control" />
+                                          <label class="form-label" for="form6Example2">Last name</label>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  
+                                    <!-- Text input -->
+                                    <div class="form-outline mb-4">
+                                      <input type="text" id="form6Example3" class="form-control" />
+                                      <label class="form-label" for="form6Example3">Company name</label>
+                                    </div>
+                                  
+                                    <!-- Text input -->
+                                    <div class="form-outline mb-4">
+                                      <input type="text" id="form6Example4" class="form-control" />
+                                      <label class="form-label" for="form6Example4">Address</label>
+                                    </div>
+                                  
+                                    <!-- Email input -->
+                                    <div class="form-outline mb-4">
+                                      <input type="email" id="form6Example5" class="form-control" />
+                                      <label class="form-label" for="form6Example5">Email</label>
+                                    </div>
+                                  
+                                    <!-- Number input -->
+                                    <div class="form-outline mb-4">
+                                      <input type="number" id="form6Example6" class="form-control" />
+                                      <label class="form-label" for="form6Example6">Phone</label>
+                                    </div>
+                                  
+                                    <!-- Message input -->
+                                    <div class="form-outline mb-4">
+                                      <textarea class="form-control" id="form6Example7" rows="4"></textarea>
+                                      <label class="form-label" for="form6Example7">Additional information</label>
+                                    </div>
+                                  
+                                    <!-- Checkbox -->
+                                    <div class="form-check d-flex justify-content-center mb-4">
+                                      <input
+                                        class="form-check-input me-2"
+                                        type="checkbox"
+                                        value=""
+                                        id="form6Example8"
+                                        checked
+                                      />
+                                      <label class="form-check-label" for="form6Example8"> Create an account? </label>
+                                    </div>
+                                  
+                             
+                                   
+                                  </form>
+                            </div>
+                          </div>
+                      </div>
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <!-- cart  -->
+                   <div class="product-cart">
+                        <h4 class=" pb-3">Your cart</h4>
+                        <div  class="d-flex align-items-center mb-4" >
+                            <a  class="d-block flex-shrink-0" href=""><img class="rounded" src="assets/img/watch.jpg" alt="Product" width="60"></a>
+                            <div class="w-100 ps-2 ms-1">
+                            <div  class="d-flex align-items-center justify-content-between">
+                                <div class="me-3">
+                                <h4 class="nav-heading  mb-1"><a class="fw-medium  text-muted" href="single-product.html">Smart Watch Series 5</a></h4>
+                                <div class="d-flex align-items-center fs-sm"><span class="me-2">$364.99</span><span class="me-2">x</span>
+                                    <input class="form-control form-control-sm px-2" type="number" style="max-width: 3.5rem;" min="1" value="1">
+                                </div>
+                                </div>
+                                <div class="ps-3 border-start"><a  class="d-block text-danger text-decoration-none fs-xl" href="#" data-bs-toggle="tooltip" title="" data-bs-original-title="Remove" aria-label="Remove"><i  class="far fa-times-circle"></i></a></div>
+                            </div>
+                            </div>
+                        </div>
+                        <div  class="d-flex align-items-center mb-4" >
+                            <a  class="d-block flex-shrink-0" href=""><img class="rounded" src="assets/img/shoe.jpg" alt="Product" width="60"></a>
+                            <div class="w-100 ps-2 ms-1">
+                            <div  class="d-flex align-items-center justify-content-between">
+                                <div class="me-3">
+                                <h4 class="nav-heading  mb-1"><a class="fw-medium fs-md text-muted" href="single-product.html">Running Sneakers, Collection</a></h4>
+                                <div class="d-flex align-items-center fs-sm"><span class="me-2">$364.99</span><span class="me-2">x</span>
+                                    <input class="form-control form-control-sm px-2" type="number" style="max-width: 3.5rem;" min="1" value="1">
+                                </div>
+                                </div>
+                                <div class="ps-3 border-start"><a  class="d-block text-danger text-decoration-none fs-xl" href="#" data-bs-toggle="tooltip" title="" data-bs-original-title="Remove" aria-label="Remove"><i  class="far fa-times-circle"></i></a></div>
+                            </div>
+                            </div>
+                        </div>
+                        <div  class="d-flex align-items-center mb-4" >
+                            <a  class="d-block flex-shrink-0" href=""><img class="rounded" src="assets/img/ear.jpg" alt="Product" width="60"></a>
+                            <div class="w-100 ps-2 ms-1">
+                            <div  class="d-flex align-items-center justify-content-between">
+                                <div class="me-3">
+                                <h4 class="nav-heading  mb-1"><a class="fw-medium  text-muted" href="single-product.html">Wireless Bluetooth Headset</a></h4>
+                                <div class="d-flex align-items-center fs-sm"><span class="me-2">$364.99</span><span class="me-2">x</span>
+                                    <input class="form-control form-control-sm px-2" type="number" style="max-width: 3.5rem;" min="1" value="1">
+                                </div>
+                                </div>
+                                <div class="ps-3 border-start"><a  class="d-block text-danger text-decoration-none fs-xl" href="#" data-bs-toggle="tooltip" title="" data-bs-original-title="Remove" aria-label="Remove"><i  class="far fa-times-circle"></i></a></div>
+                            </div>
+                            </div>
+                        </div>
+                        <hr class="mt-0 mb-4">
+                        <div class="d-flex justify-content-between mb-3"><span class="fw-bold mb-0">Subtotal:</span><span class="text-nav">$776.99</span></div>
+                        <div class="d-flex justify-content-between mb-3"><span class="fw-bold mb-0">Tax:</span><span class="text-nav">—</span></div>
+                        <div class="d-flex justify-content-between mb-3"><span class="fw-bold mb-0">Shipping:</span><span class="text-nav">$12.35</span></div>
+                        <div class="d-flex justify-content-between mb-3"><span class="fw-bold mb-0">Total:</span><span class="fw-bold mb-0">$789.34</span></div>
+
+                        <div class="payment-method">
+                            <!-- Button triggers collapse -->
+                              <div class="accordion bg-white shadow p-3 rounded-3">
+                                <a class=" bg-white "data-mdb-toggle="collapse"href="#collapseWithScrollbar"role="button" aria-expanded="false"aria-controls="collapseExample"><input class="form-check-input mx-2" type="radio" id="credit-card-radio" name="payment_method" checked=""><span class="fw-bold text-muted">Credit Card</span> <img class="ms-3" src="assets/img/cards.png" alt="Accepted cards" width="130"></a>
+                                <!-- Collapsed content -->
+                                <div class="collapse mt-3 scroll-section bg-white show" id="collapseWithScrollbar"  style="max-width: 500px">
+                                    <div class="cart-num p-3">
+                                        <div class="form-outline py-1">
+                                            <input type="text" id="form1" class="form-control" />
+                                            <label class="form-label" for="form1">Card number</label>
+                                          </div>
+                                    </div>
+                                    <div class="date p-3 d-flex align-items-between">
+                                        <div class="form-outline mx-2">
+                                          <input type="date" id="form1" class="form-control" />
+                                          <label class="form-label" for="form1">Expiry date</label>
+                                        </div>
+                                        <div class="form-outline">
+                                          <input type="text" id="form1" class="form-control" />
+                                          <label class="form-label" for="form1">CVC</label>
+                                        </div>
+                                    </div>
+                                </div>
+                              </div>
+                              <!-- paypal  -->
+                              <div class="accordion bg-white shadow p-3 rounded-3 my-3">
+                                <a class=" bg-white "data-mdb-toggle="collapse"href="#collapseWithScrollba"role="button" aria-expanded="false"aria-controls="collapseExample"><input class="form-check-input mx-2" type="radio" id="credit-card-radio" name="payment_method" checked=""><span class="fw-bold text-muted">PayPal</span> <img class="ms-3" src="assets/img/paypal.png" alt="Accepted cards" width="20"></a>
+                                <!-- Collapsed content -->
+                                <div class="collapse mt-3 scroll-section bg-white" id="collapseWithScrollba"  style="max-width: 500px">
+                                     <div class="pay-text p-3">
+                                        <p class="small ">By clicking on the button below you will be redirected to your PayPal account to complete the payment.</p>
+                                        <img class="d-block" src="assets/img/paypal-button.png" alt="PayPal" width="200">
+                                     </div>
+                                </div>
+                              </div>
+                              <!-- cash  -->
+                              <div class="accordion bg-white shadow p-3 rounded-3 my-3">
+                                <a class=" bg-white "data-mdb-toggle="collapse"href="#collapseWithScrollb"role="button" aria-expanded="false"aria-controls="collapseExample"><input class="form-check-input mx-2" type="radio" id="credit-card-radio" name="payment_method" checked=""><span class="fw-bold text-muted">Cash on delivery</span> </a>
+                                <!-- Collapsed content -->
+                                <div class="collapse mt-3 scroll-section bg-white" id="collapseWithScrollb"  style="max-width: 500px">
+                                     <div class="pay-text p-3">
+                                        <p class="small ">You have selected to pay with cash upon delivery.</p>
+                                       
+                                     </div>
+                                </div>
+                              </div>
+                              <button class="btn btn-primary d-block w-100" type="submit">Place order</button>
+                        </div>
+                    </div>
+                    
+                              
+                </div>
+            </div>
+            
+        </div>
+       
+    </main>
+    <!--Main layout-->
+
+    <!--Footer-->
+    <footer class=" text-white py-3" >
+      <div class="footer-top container py-3 ">
+        <div class="row ">
+          <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+              <h2>SiteLogo</h2>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque nulla tempora voluptate sint deserunt vero esse provident.</p>
+              <div class="social-icon">
+                <a class="btn btn-primary btn-floating" style="background-color: #3b5998" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-primary btn-floating" style="background-color: #3b5998" href="#!" role="button"><i class="fab fa-twitter"></i></a>
+                <a class="btn btn-primary btn-floating" style="background-color: #3b5998" href="#!" role="button"><i class="fab fa-instagram"></i></a>
+                <a class="btn btn-primary btn-floating" style="background-color: #3b5998" href="#!" role="button"><i class="fab fa-dribbble"></i></a>
+              </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                <h2> Shop </h2>
+                <ul>
+                  <li>For man</li>
+                  <li>For Woman</li>
+                  <li>Stories</li>
+                  <li>Our Blog</li>
+                </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+            <h2> Company </h2>
+            <ul>
+              <li>Log In</li>
+              <li>Register</li>
+              <li>Wishlist</li>
+              <li>Our Product</li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+              <h2>NewsLetter</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro non illo saepe cupiditate dolores ad delectus soluta accusamus.</p>
+              <div class="email-opt">
+                <div class="form-outline">
+                  <input type="email" id="form1" class="form-control" style="position: relative;" />
+                  <label class="form-label" for="form1">Enter Email</label>
+                  <button type="button" class="btn " style="position: absolute; right: 0; top: 0;"><i class="fas fa-arrow-right"></i></button>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+      <hr class="my-5">
+       <div class="footer-copyright text-center py-3 text-white">
+        Copyrights © 2021 by <a href="https://fb.com/Rahim703936" class="link-info">Abdur Rahim </a> All Rights Reserved
+       </div>
+    </footer>
+    <!--Footer-->
+
+       <!-- End  project here-->
+   </body>
+   <!-- MDB core JavaScript -->
+   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.js"></script>
+   <script src="/assets/js/script.js"></script>
+    <!-- swiper js  -->
+   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</html>
+
